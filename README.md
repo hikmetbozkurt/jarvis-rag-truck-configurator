@@ -206,20 +206,6 @@ Jarvis responses follow a strict two-part format:
 
 ---
 
-## Should you upload the model to GitHub?
-**No.** Do not upload model binaries or GGUF files:
-- They are huge
-- Licensing may not allow redistribution
-- Ollama already handles installation with `ollama pull mistral`
-
-You *should* upload:
-- Code
-- Prompts
-- R scripts
-- (Optionally) small example data samples
-
----
-
 ## License
 This project is released under the **PolyForm Noncommercial License**:
 - You may **view, use, and modify** for personal/educational purposes.
