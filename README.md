@@ -25,7 +25,7 @@ This avoids hallucinations and makes the assistant suitable for realistic config
 The project uses a clean multi‑layer design:
 
 - **Data Layer (R / RStudio)**  
-  Generates and processes structured data sets (JSON) for parts, rules, technical narratives, and real-world inventory.
+  Generates and processes structured datasets (JSON) for parts, rules, technical narratives, and real-world inventory.
 
 - **Orchestration Layer (Python / RAG)**  
   Handles ingestion, embeddings, hybrid retrieval, routing, and response formatting.
@@ -58,7 +58,7 @@ graph TD
 - **RAG / Orchestration**: Python, LangChain, ChromaDB
 - **Embeddings**: `all-MiniLM-L6-v2` (SentenceTransformers)
 - **Hybrid Retrieval**: Vector search (Chroma) + keyword search (BM25)
-- **Re-ranking**: Cross‑Encoder re-ranker (`cross-encoder/ms-marco-MiniLM-L-6-v2`)
+- **Re-ranking**: Cross-Encoder re-ranker (`cross-encoder/ms-marco-MiniLM-L-6-v2`)
 - **Backend**: FastAPI + Uvicorn
 - **Frontend**: React + TypeScript + Vite + TailwindCSS
 - **Data Processing**: R / RStudio (`dplyr`, `tidyr`, `jsonlite`)
@@ -74,7 +74,7 @@ graph TD
   - `retriever.py`: hybrid retrieval (vector + BM25) + optional self-query filtering
   - `reranker.py`: cross-encoder re-ranking
   - `rag_engine.py`: end-to-end orchestration (Router → Retriever → ReRanker → LLM)
-- **`web-ui/backend/`**: FastAPI API (`/chat`) powering the web UI
+- **`web-ui/backend/`**: FastAPI backend (`/chat`) powering the web UI
 - **`web-ui/frontend/`**: React UI (chat, voice mode, reasoning panel)
 
 ---
@@ -168,7 +168,7 @@ R scripts produce structured JSON and narrative docs. Python converts these into
 Then merges + deduplicates results.
 
 ### Step E — Re-ranking
-`src_python/reranker.py` re-scores candidate documents using a cross‑encoder and selects the best context.
+`src_python/reranker.py` re-scores candidate documents using a cross-encoder and selects the best context.
 
 ### Step F — LLM Generation
 `src_python/rag_engine.py` injects context + prompts and calls Mistral via Ollama.
