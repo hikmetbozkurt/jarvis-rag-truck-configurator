@@ -1,0 +1,10 @@
+.git
+**/__pycache__
+**/node_modules
+frontend/dist
+storage
+evaluation/reports
+env
+venv
+.venv
+.env

@@ -1,39 +1,30 @@
-# macOS
+# OS / editors
 .DS_Store
+.vscode/
+.idea/
 
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-.Python
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .venv/
 venv/
-ENV/
 env/
 
-# Node / Frontend
+# Frontend
 node_modules/
 dist/
-.vite/
 
-# Local DB / Vector store
-db/
+# Runtime state (vector store, traces, evaluation reports)
+storage/
+evaluation/reports/
 
-# Generated datasets / exports
-data/
-
-# Editor / IDE
-.vscode/
-.idea/
-
-# Logs
-*.log
-
-# Secrets (if you add them later)
+# Secrets
 .env
 .env.*
+!.env.example
 
+*.log

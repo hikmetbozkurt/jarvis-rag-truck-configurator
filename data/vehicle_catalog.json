@@ -1,0 +1,299 @@
+{
+  "models": [
+    {
+      "id": "M1",
+      "name": "Ford F-150",
+      "make": "Ford",
+      "category": "Light Duty",
+      "base_price_usd": 38500,
+      "max_towing_lbs": 11000,
+      "max_payload_lbs": 2100,
+      "description": "Versatile full-size pickup for mixed work and daily use.",
+      "supported_engine_ids": ["E1", "E2", "E4"]
+    },
+    {
+      "id": "M2",
+      "name": "Ford F-350",
+      "make": "Ford",
+      "category": "Heavy Duty",
+      "base_price_usd": 49500,
+      "max_towing_lbs": 20000,
+      "max_payload_lbs": 4000,
+      "description": "Super Duty truck built for heavy towing and severe service.",
+      "supported_engine_ids": ["E2", "E3"]
+    },
+    {
+      "id": "M3",
+      "name": "RAM 2500",
+      "make": "RAM",
+      "category": "Heavy Duty",
+      "base_price_usd": 47000,
+      "max_towing_lbs": 19000,
+      "max_payload_lbs": 3500,
+      "description": "Heavy-duty pickup with a rugged frame for demanding job sites.",
+      "supported_engine_ids": ["E2", "E3"]
+    },
+    {
+      "id": "M4",
+      "name": "GMC Sierra 1500",
+      "make": "GMC",
+      "category": "Light Duty",
+      "base_price_usd": 41500,
+      "max_towing_lbs": 11500,
+      "max_payload_lbs": 2200,
+      "description": "Premium light-duty pickup focused on comfort and technology.",
+      "supported_engine_ids": ["E1", "E2", "E4"]
+    }
+  ],
+  "engines": [
+    {
+      "id": "E1",
+      "name": "2.0L I4 Turbo",
+      "fuel_type": "Gasoline",
+      "cylinders": 4,
+      "displacement_l": 2,
+      "horsepower": 270,
+      "torque_lb_ft": 310,
+      "price_adder_usd": 0,
+      "description": "Fuel-efficient four-cylinder for light city work."
+    },
+    {
+      "id": "E2",
+      "name": "3.0L V6",
+      "fuel_type": "Gasoline",
+      "cylinders": 6,
+      "displacement_l": 3,
+      "horsepower": 375,
+      "torque_lb_ft": 470,
+      "price_adder_usd": 3500,
+      "description": "Balanced V6 for daily work and moderate towing."
+    },
+    {
+      "id": "E3",
+      "name": "5.0L V8",
+      "fuel_type": "Gasoline",
+      "cylinders": 8,
+      "displacement_l": 5,
+      "horsepower": 400,
+      "torque_lb_ft": 410,
+      "price_adder_usd": 6500,
+      "description": "High-torque V8 for maximum towing and heavy loads."
+    },
+    {
+      "id": "E4",
+      "name": "EV Dual Motor",
+      "fuel_type": "Electric",
+      "cylinders": 0,
+      "displacement_l": 0,
+      "horsepower": 452,
+      "torque_lb_ft": 775,
+      "price_adder_usd": 12000,
+      "description": "Zero-emission electric drivetrain with instant torque."
+    }
+  ],
+  "transmissions": [
+    {
+      "id": "T1",
+      "name": "6-Speed Manual",
+      "price_adder_usd": 0,
+      "description": "Traditional manual gearbox for driver control."
+    },
+    {
+      "id": "T2",
+      "name": "10-Speed Automatic",
+      "price_adder_usd": 1500,
+      "description": "Smooth automatic tuned for towing and highway efficiency."
+    },
+    {
+      "id": "T3",
+      "name": "Single-Speed Direct",
+      "price_adder_usd": 0,
+      "description": "Direct drive unit used only with electric drivetrains."
+    }
+  ],
+  "trims": [
+    {
+      "id": "TR1",
+      "name": "Base",
+      "price_adder_usd": 0,
+      "description": "Standard work-ready equipment."
+    },
+    {
+      "id": "TR2",
+      "name": "Sport",
+      "price_adder_usd": 4500,
+      "description": "Performance-tuned suspension and styling."
+    },
+    {
+      "id": "TR3",
+      "name": "Premium",
+      "price_adder_usd": 9000,
+      "description": "Luxury interior, advanced driver assistance and technology package."
+    }
+  ],
+  "applications": [
+    {
+      "id": "A1",
+      "name": "Logging",
+      "description": "Heavy timber transport in rugged terrain."
+    },
+    {
+      "id": "A2",
+      "name": "Long-haul delivery",
+      "description": "Extended highway transport between cities."
+    },
+    {
+      "id": "A3",
+      "name": "Urban delivery",
+      "description": "Short-range stop-and-go delivery inside cities."
+    },
+    {
+      "id": "A4",
+      "name": "Emergency Medical",
+      "description": "Critical response vehicles that must stay reliable under load."
+    },
+    {
+      "id": "A5",
+      "name": "Construction",
+      "description": "On-site material and tool transport."
+    }
+  ],
+  "rules": [
+    {
+      "id": "RULE-V8-TRANSMISSION",
+      "type": "constraint",
+      "conditions": {
+        "engine": "5.0L V8"
+      },
+      "forbidden": {
+        "transmission": "6-Speed Manual"
+      },
+      "message": "The 5.0L V8 requires the 10-Speed Automatic because of its torque output."
+    },
+    {
+      "id": "RULE-EV-TRANSMISSION",
+      "type": "constraint",
+      "conditions": {
+        "engine": "EV Dual Motor"
+      },
+      "required": {
+        "transmission": "Single-Speed Direct"
+      },
+      "message": "The EV Dual Motor drivetrain only works with the Single-Speed Direct unit."
+    },
+    {
+      "id": "RULE-DIRECT-DRIVE-EV-ONLY",
+      "type": "constraint",
+      "conditions": {
+        "transmission": "Single-Speed Direct"
+      },
+      "required": {
+        "engine": "EV Dual Motor"
+      },
+      "message": "The Single-Speed Direct unit is only available with the EV Dual Motor."
+    },
+    {
+      "id": "RULE-LOGGING-RECOMMENDATION",
+      "type": "recommendation",
+      "conditions": {
+        "application": "Logging"
+      },
+      "recommendation": "Ford F-350 with 5.0L V8",
+      "message": "Logging needs extreme torque. The Ford F-350 with the 5.0L V8 is the recommended setup for rugged terrain."
+    },
+    {
+      "id": "RULE-CALIFORNIA-URBAN-DELIVERY",
+      "type": "recommendation",
+      "conditions": {
+        "region": "California",
+        "application": "Urban delivery"
+      },
+      "recommendation": "EV Dual Motor",
+      "message": "Urban delivery fleets in California should use the EV Dual Motor to meet local emission targets."
+    },
+    {
+      "id": "RULE-LONG-HAUL-TRANSMISSION",
+      "type": "recommendation",
+      "conditions": {
+        "application": "Long-haul delivery"
+      },
+      "recommendation": "10-Speed Automatic",
+      "message": "Long-haul delivery benefits from the 10-Speed Automatic for highway efficiency and driver fatigue."
+    },
+    {
+      "id": "RULE-SPORT-TRIM-WHEELS",
+      "type": "recommendation",
+      "conditions": {
+        "trim": "Sport"
+      },
+      "recommendation": "Performance Wheels and Upgraded Brakes",
+      "message": "The Sport trim pairs best with Performance Wheels and Upgraded Brakes."
+    },
+    {
+      "id": "RULE-COMPAT-M1-E3",
+      "type": "constraint",
+      "conditions": {
+        "model": "Ford F-150"
+      },
+      "forbidden": {
+        "engine": "5.0L V8"
+      },
+      "message": "The 5.0L V8 is reserved for the Super Duty F-350 chassis."
+    },
+    {
+      "id": "RULE-COMPAT-M2-E1",
+      "type": "constraint",
+      "conditions": {
+        "model": "Ford F-350"
+      },
+      "forbidden": {
+        "engine": "2.0L I4 Turbo"
+      },
+      "message": "The Ford F-350 is not offered with the 2.0L I4 Turbo."
+    },
+    {
+      "id": "RULE-COMPAT-M2-E4",
+      "type": "constraint",
+      "conditions": {
+        "model": "Ford F-350"
+      },
+      "forbidden": {
+        "engine": "EV Dual Motor"
+      },
+      "message": "The Ford F-350 is not offered with the EV Dual Motor."
+    },
+    {
+      "id": "RULE-COMPAT-M3-E1",
+      "type": "constraint",
+      "conditions": {
+        "model": "RAM 2500"
+      },
+      "forbidden": {
+        "engine": "2.0L I4 Turbo"
+      },
+      "message": "The RAM 2500 is not offered with the 2.0L I4 Turbo."
+    },
+    {
+      "id": "RULE-COMPAT-M3-E4",
+      "type": "constraint",
+      "conditions": {
+        "model": "RAM 2500"
+      },
+      "forbidden": {
+        "engine": "EV Dual Motor"
+      },
+      "message": "The RAM 2500 is not offered with the EV Dual Motor."
+    },
+    {
+      "id": "RULE-COMPAT-M4-E3",
+      "type": "constraint",
+      "conditions": {
+        "model": "GMC Sierra 1500"
+      },
+      "forbidden": {
+        "engine": "5.0L V8"
+      },
+      "message": "The 1500-series chassis is not rated for the 5.0L V8 package."
+    }
+  ]
+}

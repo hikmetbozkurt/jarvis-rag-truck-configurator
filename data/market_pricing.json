@@ -1,0 +1,56 @@
+[
+  {
+    "id": "PRICE-M1",
+    "topic": "model_pricing",
+    "model_name": "Ford F-150",
+    "base_price_usd": 38500,
+    "min_price_usd": 38500,
+    "max_price_usd": 59500,
+    "content": "Ford F-150 pricing: base MSRP $38,500. The 15 valid configurations range from $38,500 to $59,500 depending on powertrain, transmission and trim."
+  },
+  {
+    "id": "PRICE-M2",
+    "topic": "model_pricing",
+    "model_name": "Ford F-350",
+    "base_price_usd": 49500,
+    "min_price_usd": 53000,
+    "max_price_usd": 66500,
+    "content": "Ford F-350 pricing: base MSRP $49,500. The 9 valid configurations range from $53,000 to $66,500 depending on powertrain, transmission and trim."
+  },
+  {
+    "id": "PRICE-M3",
+    "topic": "model_pricing",
+    "model_name": "RAM 2500",
+    "base_price_usd": 47000,
+    "min_price_usd": 50500,
+    "max_price_usd": 64000,
+    "content": "RAM 2500 pricing: base MSRP $47,000. The 9 valid configurations range from $50,500 to $64,000 depending on powertrain, transmission and trim."
+  },
+  {
+    "id": "PRICE-M4",
+    "topic": "model_pricing",
+    "model_name": "GMC Sierra 1500",
+    "base_price_usd": 41500,
+    "min_price_usd": 41500,
+    "max_price_usd": 62500,
+    "content": "GMC Sierra 1500 pricing: base MSRP $41,500. The 15 valid configurations range from $41,500 to $62,500 depending on powertrain, transmission and trim."
+  },
+  {
+    "id": "PRICE-BUDGET-TIERS",
+    "topic": "budget_tiers",
+    "model_name": null,
+    "base_price_usd": null,
+    "min_price_usd": null,
+    "max_price_usd": null,
+    "content": "Budget tiers: Economy under $45,000 (light-duty I4 or V6 configurations with Base trim), Professional $45,000 to $55,000 (V6 or EV light-duty and entry heavy-duty builds), Executive above $55,000 (heavy-duty V8 or EV builds with Premium trim)."
+  },
+  {
+    "id": "PRICE-MAINTENANCE",
+    "topic": "maintenance",
+    "model_name": null,
+    "base_price_usd": null,
+    "min_price_usd": null,
+    "max_price_usd": null,
+    "content": "Heavy Duty models (Ford F-350, RAM 2500) typically have about 15% higher annual maintenance costs than Light Duty models because of specialized suspension and high-torque components."
+  }
+]
