@@ -1,0 +1,80 @@
+[
+  {
+    "id": "MANUAL-M1",
+    "title": "Technical Specification: Ford F-150",
+    "topic": "model",
+    "content": "The Ford F-150 is a Light Duty pickup. Versatile full-size pickup for mixed work and daily use. Maximum towing capacity is 11,000 lbs and maximum payload is 2,100 lbs. Available powertrains: 2.0L I4 Turbo, 3.0L V6, EV Dual Motor."
+  },
+  {
+    "id": "MANUAL-M2",
+    "title": "Technical Specification: Ford F-350",
+    "topic": "model",
+    "content": "The Ford F-350 is a Heavy Duty pickup. Super Duty truck built for heavy towing and severe service. Maximum towing capacity is 20,000 lbs and maximum payload is 4,000 lbs. Available powertrains: 3.0L V6, 5.0L V8."
+  },
+  {
+    "id": "MANUAL-M3",
+    "title": "Technical Specification: RAM 2500",
+    "topic": "model",
+    "content": "The RAM 2500 is a Heavy Duty pickup. Heavy-duty pickup with a rugged frame for demanding job sites. Maximum towing capacity is 19,000 lbs and maximum payload is 3,500 lbs. Available powertrains: 3.0L V6, 5.0L V8."
+  },
+  {
+    "id": "MANUAL-M4",
+    "title": "Technical Specification: GMC Sierra 1500",
+    "topic": "model",
+    "content": "The GMC Sierra 1500 is a Light Duty pickup. Premium light-duty pickup focused on comfort and technology. Maximum towing capacity is 11,500 lbs and maximum payload is 2,200 lbs. Available powertrains: 2.0L I4 Turbo, 3.0L V6, EV Dual Motor."
+  },
+  {
+    "id": "MANUAL-E1",
+    "title": "Powertrain Guide: 2.0L I4 Turbo",
+    "topic": "engine",
+    "content": "The 2.0L I4 Turbo is a gasoline powertrain producing 270 hp and 310 lb-ft of torque. Fuel-efficient four-cylinder for light city work."
+  },
+  {
+    "id": "MANUAL-E2",
+    "title": "Powertrain Guide: 3.0L V6",
+    "topic": "engine",
+    "content": "The 3.0L V6 is a gasoline powertrain producing 375 hp and 470 lb-ft of torque. Balanced V6 for daily work and moderate towing."
+  },
+  {
+    "id": "MANUAL-E3",
+    "title": "Powertrain Guide: 5.0L V8",
+    "topic": "engine",
+    "content": "The 5.0L V8 is a gasoline powertrain producing 400 hp and 410 lb-ft of torque. High-torque V8 for maximum towing and heavy loads."
+  },
+  {
+    "id": "MANUAL-E4",
+    "title": "Powertrain Guide: EV Dual Motor",
+    "topic": "engine",
+    "content": "The EV Dual Motor is a electric powertrain producing 452 hp and 775 lb-ft of torque. Zero-emission electric drivetrain with instant torque."
+  },
+  {
+    "id": "MANUAL-A1",
+    "title": "Application Guide: Logging",
+    "topic": "application",
+    "content": "Logging: Heavy timber transport in rugged terrain. Chassis durability and torque management are the key factors for this use case. Logging needs extreme torque. The Ford F-350 with the 5.0L V8 is the recommended setup for rugged terrain."
+  },
+  {
+    "id": "MANUAL-A2",
+    "title": "Application Guide: Long-haul delivery",
+    "topic": "application",
+    "content": "Long-haul delivery: Extended highway transport between cities. Chassis durability and torque management are the key factors for this use case. Long-haul delivery benefits from the 10-Speed Automatic for highway efficiency and driver fatigue."
+  },
+  {
+    "id": "MANUAL-A3",
+    "title": "Application Guide: Urban delivery",
+    "topic": "application",
+    "content": "Urban delivery: Short-range stop-and-go delivery inside cities. Chassis durability and torque management are the key factors for this use case. Our engineering team selects the drivetrain based on payload and duty cycle."
+  },
+  {
+    "id": "MANUAL-A4",
+    "title": "Application Guide: Emergency Medical",
+    "topic": "application",
+    "content": "Emergency Medical: Critical response vehicles that must stay reliable under load. Chassis durability and torque management are the key factors for this use case. Our engineering team selects the drivetrain based on payload and duty cycle."
+  },
+  {
+    "id": "MANUAL-A5",
+    "title": "Application Guide: Construction",
+    "topic": "application",
+    "content": "Construction: On-site material and tool transport. Chassis durability and torque management are the key factors for this use case. Our engineering team selects the drivetrain based on payload and duty cycle."
+  }
+]

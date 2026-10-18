@@ -1,0 +1,22 @@
+[
+  {
+    "id": "POLICY-SAFETY",
+    "topic": "Safety Features",
+    "content": "All Heavy Duty trucks come standard with reinforced steel frames and side-impact protection."
+  },
+  {
+    "id": "POLICY-POWERTRAIN-WARRANTY",
+    "topic": "Powertrain Warranty",
+    "content": "The 5-year/60,000-mile powertrain warranty covers all V6 and V8 engines."
+  },
+  {
+    "id": "POLICY-EV-BATTERY-WARRANTY",
+    "topic": "EV Battery Warranty",
+    "content": "The EV Dual Motor battery is covered by an extended 8-year/100,000-mile protection plan."
+  },
+  {
+    "id": "POLICY-FAMILY-SAFETY",
+    "topic": "Family Safety",
+    "content": "For family use, the Premium trim adds advanced driver assistance and the highest-rated child seat anchoring."
+  }
+]

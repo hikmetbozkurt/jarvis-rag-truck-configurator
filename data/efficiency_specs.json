@@ -1,0 +1,38 @@
+[
+  {
+    "id": "EFF-E1",
+    "engine_name": "2.0L I4 Turbo",
+    "combined_mpg": 24,
+    "range_miles": null,
+    "rating": "Excellent",
+    "eco_impact": "Low CO2 footprint for light city work.",
+    "content": "2.0L I4 Turbo efficiency: about 24 MPG combined, rated Excellent. Low CO2 footprint for light city work."
+  },
+  {
+    "id": "EFF-E2",
+    "engine_name": "3.0L V6",
+    "combined_mpg": 20,
+    "range_miles": null,
+    "rating": "Good",
+    "eco_impact": "Balanced consumption for mixed daily use.",
+    "content": "3.0L V6 efficiency: about 20 MPG combined, rated Good. Balanced consumption for mixed daily use."
+  },
+  {
+    "id": "EFF-E3",
+    "engine_name": "5.0L V8",
+    "combined_mpg": 15,
+    "range_miles": null,
+    "rating": "High Consumption",
+    "eco_impact": "Optimized for power over fuel economy.",
+    "content": "5.0L V8 efficiency: about 15 MPG combined, rated High Consumption. Optimized for power over fuel economy."
+  },
+  {
+    "id": "EFF-E4",
+    "engine_name": "EV Dual Motor",
+    "combined_mpg": null,
+    "range_miles": 320,
+    "rating": "Zero Emission",
+    "eco_impact": "Best choice for environmental compliance in California.",
+    "content": "EV Dual Motor efficiency: about 320 miles of range per charge, rated Zero Emission. Best choice for environmental compliance in California."
+  }
+]
