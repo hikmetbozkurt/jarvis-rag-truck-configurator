@@ -1,15 +1,10 @@
-langchain
-langchain-community
-langchain-huggingface
-langchain-core
-langchain-ollama
-langchain-chroma
-chromadb
-sentence-transformers
-pydantic
-fastapi
-uvicorn
-SpeechRecognition
-pyttsx3
-rank_bm25
-lark
+# Runtime dependencies (pinned versions tested with Python 3.12).
+# Install the project itself with: pip install -e .
+chromadb==1.5.9
+fastapi==0.143.3
+httpx==0.28.1
+pydantic==2.14.1
+pydantic-settings==2.16.0
+rank-bm25==0.2.2
+sentence-transformers==6.1.0
+uvicorn[standard]==0.54.0

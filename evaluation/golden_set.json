@@ -1,0 +1,352 @@
+[
+  {
+    "query_id": "Q01",
+    "question": "Can I pair the 5.0L V8 with a manual transmission?",
+    "relevant_document_ids": [
+      "RULE-V8-TRANSMISSION"
+    ],
+    "expected_intent": "technical_specification"
+  },
+  {
+    "query_id": "Q02",
+    "question": "What is the best truck for logging?",
+    "relevant_document_ids": [
+      "RULE-LOGGING-RECOMMENDATION",
+      "MANUAL-A1"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q03",
+    "question": "What warranty covers the V8 engine?",
+    "relevant_document_ids": [
+      "POLICY-POWERTRAIN-WARRANTY"
+    ],
+    "expected_intent": "warranty_and_safety"
+  },
+  {
+    "query_id": "Q04",
+    "question": "How long is the EV battery covered?",
+    "relevant_document_ids": [
+      "POLICY-EV-BATTERY-WARRANTY"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q05",
+    "question": "How much does the Ford F-350 cost?",
+    "relevant_document_ids": [
+      "PRICE-M2"
+    ],
+    "expected_intent": "pricing"
+  },
+  {
+    "query_id": "Q06",
+    "question": "What is the towing capacity of the RAM 2500?",
+    "relevant_document_ids": [
+      "MANUAL-M3"
+    ],
+    "expected_intent": "technical_specification"
+  },
+  {
+    "query_id": "Q07",
+    "question": "What fuel economy does the 2.0L I4 Turbo get?",
+    "relevant_document_ids": [
+      "EFF-E1"
+    ],
+    "expected_intent": "technical_specification"
+  },
+  {
+    "query_id": "Q08",
+    "question": "Can I get the F-150 with the V8?",
+    "relevant_document_ids": [
+      "RULE-COMPAT-M1-E3"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q09",
+    "question": "We run urban delivery in California, which powertrain should we choose?",
+    "relevant_document_ids": [
+      "RULE-CALIFORNIA-URBAN-DELIVERY",
+      "MANUAL-A3"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q10",
+    "question": "What does the Sport trim add?",
+    "relevant_document_ids": [
+      "CATALOG-TR2",
+      "RULE-SPORT-TRIM-WHEELS"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q11",
+    "question": "Which transmission does the electric drivetrain use?",
+    "relevant_document_ids": [
+      "RULE-EV-TRANSMISSION",
+      "CATALOG-T3"
+    ],
+    "expected_intent": "technical_specification"
+  },
+  {
+    "query_id": "Q12",
+    "question": "Show me 2019 Toyota Tacoma options",
+    "relevant_document_ids": [
+      "INV-0169",
+      "INV-0170"
+    ],
+    "expected_intent": "inventory_search"
+  },
+  {
+    "query_id": "Q13",
+    "question": "Compare the F-150 and Silverado fuel economy",
+    "relevant_document_ids": [
+      "INV-0040",
+      "INV-0041",
+      "INV-0042",
+      "INV-0043",
+      "INV-0044",
+      "INV-0045",
+      "INV-0046",
+      "INV-0047",
+      "INV-0048",
+      "INV-0049",
+      "INV-0050",
+      "INV-0051",
+      "INV-0052",
+      "INV-0053",
+      "INV-0054",
+      "INV-0055",
+      "INV-0056",
+      "INV-0057",
+      "INV-0058",
+      "INV-0059",
+      "INV-0060",
+      "INV-0061",
+      "INV-0062",
+      "INV-0063",
+      "INV-0064",
+      "INV-0065",
+      "INV-0066",
+      "INV-0067",
+      "INV-0068",
+      "INV-0069",
+      "INV-0070",
+      "INV-0071",
+      "INV-0072",
+      "INV-0073",
+      "INV-0074",
+      "INV-0075",
+      "INV-0076",
+      "INV-0077",
+      "INV-0078",
+      "INV-0079",
+      "INV-0080",
+      "INV-0081",
+      "INV-0082",
+      "INV-0083",
+      "INV-0084",
+      "INV-0085",
+      "INV-0086",
+      "INV-0087",
+      "INV-0088",
+      "INV-0089",
+      "INV-0090",
+      "INV-0159",
+      "INV-0160",
+      "INV-0009",
+      "INV-0010",
+      "INV-0011",
+      "INV-0012",
+      "INV-0013",
+      "INV-0014",
+      "INV-0015",
+      "INV-0016",
+      "INV-0017",
+      "INV-0018",
+      "INV-0019",
+      "INV-0020",
+      "INV-0021",
+      "INV-0022",
+      "INV-0023",
+      "INV-0024",
+      "INV-0025",
+      "INV-0026",
+      "INV-0027",
+      "INV-0028",
+      "INV-0029",
+      "INV-0030",
+      "INV-0031",
+      "INV-0032",
+      "INV-0033",
+      "INV-0034",
+      "INV-0035",
+      "INV-0036",
+      "INV-0037",
+      "INV-0038",
+      "INV-0039"
+    ],
+    "expected_intent": "comparison"
+  },
+  {
+    "query_id": "Q14",
+    "question": "Are heavy duty trucks more expensive to maintain?",
+    "relevant_document_ids": [
+      "PRICE-MAINTENANCE"
+    ],
+    "expected_intent": "pricing"
+  },
+  {
+    "query_id": "Q15",
+    "question": "What can I get under $45,000?",
+    "relevant_document_ids": [
+      "PRICE-BUDGET-TIERS",
+      "PRICE-M1",
+      "PRICE-M4"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q16",
+    "question": "What safety features do heavy duty trucks have?",
+    "relevant_document_ids": [
+      "POLICY-SAFETY"
+    ],
+    "expected_intent": "warranty_and_safety"
+  },
+  {
+    "query_id": "Q17",
+    "question": "Which configuration is safest for driving my kids around?",
+    "relevant_document_ids": [
+      "POLICY-FAMILY-SAFETY",
+      "CATALOG-TR3"
+    ],
+    "expected_intent": "warranty_and_safety"
+  },
+  {
+    "query_id": "Q18",
+    "question": "Do you have any diesel pickups in the inventory?",
+    "relevant_document_ids": [
+      "INV-0002",
+      "INV-0005",
+      "INV-0007",
+      "INV-0012",
+      "INV-0016",
+      "INV-0047",
+      "INV-0059",
+      "INV-0074",
+      "INV-0083",
+      "INV-0089",
+      "INV-0094",
+      "INV-0097",
+      "INV-0102",
+      "INV-0106",
+      "INV-0110",
+      "INV-0145",
+      "INV-0148",
+      "INV-0151",
+      "INV-0154",
+      "INV-0157"
+    ],
+    "expected_intent": "inventory_search"
+  },
+  {
+    "query_id": "Q19",
+    "question": "Tell me about the GMC Sierra 1500",
+    "relevant_document_ids": [
+      "MANUAL-M4",
+      "PRICE-M4"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q20",
+    "question": "How much horsepower does the EV Dual Motor make?",
+    "relevant_document_ids": [
+      "MANUAL-E4"
+    ],
+    "expected_intent": "technical_specification"
+  },
+  {
+    "query_id": "Q21",
+    "question": "What do you recommend for long-haul delivery?",
+    "relevant_document_ids": [
+      "RULE-LONG-HAUL-TRANSMISSION",
+      "MANUAL-A2"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q22",
+    "question": "I need a truck for an emergency medical team",
+    "relevant_document_ids": [
+      "MANUAL-A4"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q23",
+    "question": "Can the single-speed direct transmission be used with the V6?",
+    "relevant_document_ids": [
+      "RULE-DIRECT-DRIVE-EV-ONLY"
+    ],
+    "expected_intent": "technical_specification"
+  },
+  {
+    "query_id": "Q24",
+    "question": "What MPG does the 2020 Ram 1500 get?",
+    "relevant_document_ids": [
+      "INV-0145",
+      "INV-0146",
+      "INV-0147",
+      "INV-0148",
+      "INV-0149",
+      "INV-0150",
+      "INV-0158"
+    ],
+    "expected_intent": "inventory_search"
+  },
+  {
+    "query_id": "Q25",
+    "question": "Which truck works best on a construction site?",
+    "relevant_document_ids": [
+      "MANUAL-A5"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q26",
+    "question": "Can I order the RAM 2500 with the electric drivetrain?",
+    "relevant_document_ids": [
+      "RULE-COMPAT-M3-E4"
+    ],
+    "expected_intent": "configuration"
+  },
+  {
+    "query_id": "Q27",
+    "question": "Find a Nissan Frontier",
+    "relevant_document_ids": [
+      "INV-0134",
+      "INV-0135",
+      "INV-0136",
+      "INV-0137",
+      "INV-0138",
+      "INV-0139"
+    ],
+    "expected_intent": "inventory_search"
+  },
+  {
+    "query_id": "Q28",
+    "question": "I want a green option for city work",
+    "relevant_document_ids": [
+      "EFF-E4",
+      "EFF-E1",
+      "MANUAL-E4",
+      "MANUAL-E1"
+    ],
+    "expected_intent": "configuration"
+  }
+]
